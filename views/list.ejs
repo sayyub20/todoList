@@ -1,0 +1,22 @@
+<%- include ('header') %>
+
+
+<h1 class="box"><%= listTitle %></h1>
+<div class="box">
+    <h1>toDay Goal</h1>
+  <% items.forEach(function(item){ %>
+    <div class="item">
+        <input type="checkbox" name="" id="">
+       <h3><%= item %></h3> 
+    </div>
+    
+<%})  %>
+
+ <form action="/" method="post">
+    <input class="add-inp"  type="text" name="listItem" id="">
+    <button type="submit">+</button>
+ </form>
+  
+</div>
+
+
